@@ -27,7 +27,7 @@ export default function OpportunityCard(props: IOpportunityCard) {
             <h2>{data.institution}</h2>
             <h3>{data.programme_name}</h3>
             <p>{data.description}</p>
-            <a href={data.url} target="_blank" rel="noopener noreferrer">{data.url}</a>
+            <a className="anchor_tag" href={data.url} target="_blank" rel="noopener noreferrer">{data.url}</a>
 
         </div>
     )

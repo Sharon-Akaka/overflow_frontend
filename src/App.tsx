@@ -18,14 +18,15 @@ function App() {
     }
     useEffect(() => { fetchAllOpportunities() }, [])
   return (
-    <div>
+    <>
       <Navbar />
-      <div className="App">
-      <SubmissionForm fetchAllOpportunities={fetchAllOpportunities} />
+     <div className='App'>
+     <SubmissionForm fetchAllOpportunities={fetchAllOpportunities} />
       <AllOpportunities allOpportunities={getAllOpportunities} setGetAllOpportunities={setGetAllOpportunities}/>
-      </div>
+     </div>
+      
 
-    </div>
+    </>
   );
 }
 

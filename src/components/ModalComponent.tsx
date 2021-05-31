@@ -1,6 +1,5 @@
 import React from 'react';
 import './ModalComponent.css';
-import { IData } from './OpportunityCard';
 
 
 interface ModalProps {
@@ -39,7 +38,7 @@ const Modal: React.FC<ModalProps> = ({ institution, programme_name, description,
                     {description}
                 </div>
                 <div className='modal_description'>
-                    {link}
+                <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
                 </div>
             </div>
 

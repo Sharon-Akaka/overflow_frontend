@@ -41,6 +41,7 @@
 .submission_container{
     display: flex;
     flex-direction: column;
+    /* position: fixed; */
     width: 20%;
     background: #fff;
     margin: 15px;
@@ -48,9 +49,15 @@
     border-radius: 7px;
     box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
+.submission_container_input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+}
 
-
-.submission_container input,
 .submission_container textarea {
     width: 100%;
     padding: 5px;
@@ -75,7 +82,6 @@
 .all_opportunities_container{
     display: flex;
     flex-flow: row wrap;
-    width: 75%;
 }
 
 /* Opportunity Card */

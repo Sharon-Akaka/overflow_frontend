@@ -17,13 +17,12 @@ export default function AllOpportunities(props: IAllOpportunities) {
     const toggleModal = () => setModalState(!isModalOpen);
 
 
-    return (<div>
+    return (
         <div>
             <input placeholder='Search here' onChange={e => { setSearchValue(e.target.value) }} />
-
-
-        </div>
+            
         <div className='all_opportunities_container' >
+            
             {props.allOpportunities.filter((item) => {
                 if (searchValue === "") {
                     return item
@@ -54,8 +53,7 @@ export default function AllOpportunities(props: IAllOpportunities) {
                 onClose={toggleModal}/>
 
         </div>
-
-    </div>
+</div>
 
     )
 }

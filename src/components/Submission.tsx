@@ -71,10 +71,14 @@ export default function SubmissionForm({ fetchAllOpportunities }: { fetchAllOppo
     return (
         <div className='submission_container'>
             <h2>Submit an Opportunity!</h2>
-            <input value={institutionInput} onChange={e => setInstitutionInput(e.target.value)} placeholder='Institution' type='text' />
-            <input value={programmeNameInput} onChange={e => setProgrammeNameInput(e.target.value)} placeholder='Programme Name' type='text' />
+            <label>Institution Name</label>
+            <input className='submission_container_input' value={institutionInput} onChange={e => setInstitutionInput(e.target.value)} placeholder='Institution' type='text' />
+            <label>Opportunity Name</label>
+            <input className='submission_container_input' value={programmeNameInput} onChange={e => setProgrammeNameInput(e.target.value)} placeholder='Programme Name' type='text' />
+            <label>Description</label>
             <textarea value={descriptionInput} onChange={e => setDescriptionInput(e.target.value)} placeholder='Description' ></textarea>
-            <input value={urlInput} onChange={e => setUrlInput(e.target.value)} placeholder='URL' type='text' />
+            <label>url</label>
+            <input className='submission_container_input' value={urlInput} onChange={e => setUrlInput(e.target.value)} placeholder='URL' type='text' />
             <label>Pre-16 <input type='checkbox' checked={forPre16} onChange={() => setForPre16(!forPre16)} /></label>
             <label>Year 12<input type='checkbox' checked={forYear12} onChange={() => setForYear12(!forYear12)} /></label>
             <label>Year 13<input type='checkbox' checked={forYear13} onChange={() => setForYear13(!forYear13)} /></label>
